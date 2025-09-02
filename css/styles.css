@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-image: url(../img/9038261.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+.title-calculadora{
+    padding: 10px;
+    border-radius: 0;
+    box-decoration-break: 0px 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    color:#fff ;
+    font-size: 25px;
+   
+}
+/* Calculadora */
+.calculator {
+    background-color:#7965C1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -178px 12px 238px -32px rgba(110,45,122,0.91);
+    margin-top:60px;
+
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #e9ecef;
+}
+
+
+.buttons .btn:hover{
+    background-color: #4f46e5;
+    transition: background-color 0.3s ease-in-out;
+
+}
+/* Botões */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.operator {
+    background-color:  #4f46e5;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #7c3aed;
+}
+
+.equal {
+    grid-column: span 4;
+    background-color:  #4f46e5;
+    color: #fff;
+}
+
+.equal:hover {
+    background-color: #7c3aed;
+}
+
+#clear {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#clear:hover {
+    background-color: #c82333;
+}
+
